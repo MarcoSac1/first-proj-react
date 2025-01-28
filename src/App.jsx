@@ -17,6 +17,7 @@ function App() {
         >
           Learn React
         </a>
+        <h1>su ma suchi t'affuchi!</h1>
       </header>
     </div>
   );
