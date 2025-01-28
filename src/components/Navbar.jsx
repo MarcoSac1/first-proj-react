@@ -1,6 +1,6 @@
 import './Navbar.css';
 
-function NavBar(){
+function Navbar(){
     return(
         <ul>
             <li>
@@ -19,4 +19,4 @@ function NavBar(){
     )
 };
 
-export default NavBar;// esporto il componente 
+export default Navbar;// esporto il componente 
