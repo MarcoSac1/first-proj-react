@@ -1,0 +1,13 @@
+section{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    justify-content: center;
+}
+
+ul{
+    list-style-type: none;
+    margin: 2rem;
+}
