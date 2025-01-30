@@ -1,9 +1,9 @@
 import './Footer.css';
 
 function Footer(){
-    const style ={
-        backgroundColor:"black",
-    }
+    // const style ={
+    //     backgroundColor:"black",
+    // }
 
     return(
         <>
