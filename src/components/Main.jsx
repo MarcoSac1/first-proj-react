@@ -3,8 +3,9 @@ import Card from './Card.jsx';
 
 function Main(){
     const people = [
-        { title: 'Marco', description: 'lorem', imgUrl: 'https://i.redd.it/ys546mxqmrfe1.jpeg' ,isVisited:false,isAdmin:true },
-        { title: 'Elisa', description: 'Description 2', imgUrl: 'https://preview.redd.it/a-few-samples-of-my-past-and-future-profile-pics-v0-j4wjtg49mfce1.jpg?width=474&format=pjpg&auto=webp&s=64c9da2232cefeda62048b2202a43fc6dbca4022',isVisited:true,isAdmin:false },
+        { title: 'Marco', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quisquam commodi tenetur iste consectetur,', imgUrl: 'https://i.redd.it/ys546mxqmrfe1.jpeg' ,isVisited:false,isAdmin:true },
+        { title: 'Elisa', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quisquam commodi tenetur iste consectetur,', imgUrl: 'https://preview.redd.it/a-few-samples-of-my-past-and-future-profile-pics-v0-j4wjtg49mfce1.jpg?width=474&format=pjpg&auto=webp&s=64c9da2232cefeda62048b2202a43fc6dbca4022',isVisited:true,isAdmin:false },
+        { title: 'Franco', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quisquam commodi tenetur iste consectetur,', imgUrl: 'https://preview.redd.it/a-few-samples-of-my-past-and-future-profile-pics-v0-j4wjtg49mfce1.jpg?width=474&format=pjpg&auto=webp&s=64c9da2232cefeda62048b2202a43fc6dbca4022',isVisited:false,isAdmin:true },
         // Aggiungi altre persone qui
     ];
     return(
@@ -14,8 +15,8 @@ function Main(){
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quisquam commodi tenetur iste consectetur, corrupti deserunt temporibus voluptates aperiam placeat ex aut facilis magni fugiat quo quidem quibusdam quasi pariatur.</p>
 
         </div>
-        <section class='card-section'>
 
+        <section class='card-section'>
         {people.map((person, index) => (
             <Card
             key={index}
@@ -27,6 +28,7 @@ function Main(){
             />
         ))}
         </section>
+
         </>
     )
 };
