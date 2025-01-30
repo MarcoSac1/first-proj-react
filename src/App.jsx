@@ -16,7 +16,6 @@ function App() {
     <div className="App">
       <Header/>
       <Main/>
-      <Card/>
       {people.map((person, index) => (
         <Card
         key={index}
