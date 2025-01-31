@@ -1,5 +1,7 @@
 import '../App.css';
 import Card from './Card.jsx';
+import NewComponent from './NewComponent';
+
 
 function Main(){
     const people = [
@@ -15,7 +17,7 @@ function Main(){
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quisquam commodi tenetur iste consectetur, corrupti deserunt temporibus voluptates aperiam placeat ex aut facilis magni fugiat quo quidem quibusdam quasi pariatur.</p>
 
         </div>
-
+        <NewComponent/>
         <section class='card-section'>
         {people.map((person, index) => (
             <Card
