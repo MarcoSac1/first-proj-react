@@ -1,7 +1,6 @@
 import '../App.css';
 import Card from './Card.jsx';
-import NewComponent from './NewComponent';
-
+import NewComponent from './NewComponent.jsx';
 
 function Main(){
     const people = [
