@@ -84,12 +84,17 @@ button:hover{
   transition: .4s linear;
 }
 
+
 input{
   padding: .5rem;
   background-color: #61dafb;
   border: none;
   border-radius: 8px;
+  margin: .5rem;
 }
+
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
