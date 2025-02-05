@@ -4,7 +4,7 @@ function ApiComponent() {
     const [cards, setCards] = useState([]);
 
     useEffect(() => {
-        fetch('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=0')
+        fetch('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=10')
             .then((response) => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
