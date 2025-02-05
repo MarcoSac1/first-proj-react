@@ -15,19 +15,19 @@ function App() {
   const[username, setUsername] = useState('Marco')
 
   return (
-    <div className="App">
-      <Header isLoggedIn={true}/>
-      {/* <Header isLoggedIn={false}/> */}
-      <UserContext.Provider value =  { username }>
-        <ParentComponent/>
-      </UserContext.Provider>
-      <PrimoComponente/>
-      <RegistrationForm/>
-      <ApiComponent/>
-      <Main/>
-      <Footer/>
-    </div>
-  );
+  <div className="App">
+    <Header isLoggedIn={true}/>
+    <Header isLoggedIn={false}/> 
+    <UserContext.Provider value =  { {username, setUsername} }>
+      <ParentComponent/>
+    </UserContext.Provider>
+    <PrimoComponente/> 
+    <RegistrationForm/>
+    <ApiComponent/> 
+    <Main/> 
+    <Footer/> 
+  </div> 
+);
 }
 
 export default App;
