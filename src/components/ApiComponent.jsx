@@ -25,9 +25,9 @@ function ApiComponent() {
             <ul>
                 {cards.map((card) => (
                     <li key={card.id}>
+                    <img src={card.card_images[0].image_url_small} alt="" />
                     <p><strong>card name:</strong>{card.name}</p>
                     <p><strong>card archetype:</strong> {card.archetype} </p>
-                    <img src={card.card_images[0].image_url_small} alt="" />
                     </li> 
                 ))}
             </ul>

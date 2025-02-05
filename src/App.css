@@ -27,10 +27,15 @@ header {
 ul{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
 }
 
 li{
   padding: .4rem;
+  max-width: 300px;
 }
 p{
   padding: .4rem;
