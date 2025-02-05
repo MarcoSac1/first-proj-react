@@ -5,8 +5,12 @@ function ParentComponent() {
     
     return (
     <>
-    <div>ParentComponent</div>
-    <ChildComponent/>
+    <div>
+        <h1>
+            ParentComponent
+        </h1>
+        <ChildComponent/>
+    </div>
     </>
     )
 }
