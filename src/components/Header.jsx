@@ -12,6 +12,7 @@ function Header({ isLoggedIn }) {
   console.log("isLoggedIn:", isLoggedIn);
 
 
+
   return (
     <header>
       <h1>Navbar Dinamica</h1>
