@@ -11,7 +11,9 @@ import Accounts from './components/pages/Accounts';
 import SingleAccounts from './components/pages/SingleAccount';
 import Header from './components/Header';
 import Consulenza from './components/pages/Consulenza';
+import Contatti from './components/pages/Contatti'
 
+//ciao Franco
 
 
 
@@ -19,13 +21,21 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const router = createBrowserRouter([
   {
-    path:'/Home',
+    path:'/',
     element: <App/>,
     errorElement:<Error/>
   },
   {
     path:'/about',
     element: <About/>
+  },
+  {
+    path:'/consulenza',
+    element: <Consulenza/>
+  },
+  {
+    path:'/contatti',
+    element: <Contatti/>
   },
   {
     path:'/accounts',
@@ -35,14 +45,7 @@ const router = createBrowserRouter([
     path:'/accounts/:name',//creo un router dinamico 
     element:<SingleAccounts/>
   },
-  {
-    path:'/lista/:name',//creo un router dinamico 
-    element:<Header/>
-  },
-  {
-    path:'/lista/Consulenza',//creo un router dinamico 
-    element:<Consulenza/>
-  },
+
 ])
 
 root.render(

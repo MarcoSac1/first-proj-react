@@ -1,28 +1,30 @@
 import './Header.css';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
-function Header({isLoggedIn}){
-    const listaMenu = ['Home', 'About', 'Consulenza', 'Contatti']
-    if(isLoggedIn){
-    return(
-        <header>
-            <h1>
-                Ciao sono un header
-            </h1>
-            <ul>
-            {listaMenu.map((lista)=>(
-                <Link key={lista} to ={'/lista/'+lista}>
-                {lista}
-                </Link>
-            ))}
-                
-            </ul>
-        </header>
-    )
-}else{
-    return <p>Perfavore, effettua il login</p>
+function Header({ isLoggedIn }) {
+  const listaMenu = [
+    { name: 'Home', path: '/' },
+    { name: 'About', path: '/about' },
+    { name: 'Consulenza', path: '/consulenza' },
+    { name: 'Contatti', path: '/contatti' },
+  ];
 
+  console.log("isLoggedIn:", isLoggedIn);
+
+
+
+  return (
+    <header>
+      <h1>Navbar Dinamica</h1>
+      <ul>
+        {listaMenu.map((item) => (
+          <li key={item.name}>
+            <Link to={item.path}>{item.name}</Link>
+          </li>
+        ))}
+      </ul>
+    </header>
+  );
 }
-};
 
-export default Header //esporto il componente
+export default Header;
