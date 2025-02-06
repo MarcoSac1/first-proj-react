@@ -16,8 +16,8 @@ function App() {
   const[isLoggedIn, setIsLoggedIn] = useState(true)
   return (
   <div className="App">
-    <Header isLoggedIn={true}/>
-    {/* <Header isLoggedIn={false}/>  */}
+    <Header isLoggedIn={isLoggedIn}/>
+ 
     <UserContext.Provider value =  { {username, setUsername} }>
       <ParentComponent/>
     </UserContext.Provider>
