@@ -33,6 +33,10 @@ ul{
 
 }
 
+ul > a{
+  padding: .5rem;
+}
+
 li{
   padding: .4rem;
   max-width: 250px;

@@ -1,7 +1,8 @@
 import './Header.css';
+import { Link } from 'react-router-dom'
 
 function Header({isLoggedIn}){
-    const listaMenu = ['Home', 'Chi siamo', 'Consulenza', 'Contatti']
+    const listaMenu = ['Home', 'About', 'Consulenza', 'Contatti']
     if(isLoggedIn){
     return(
         <header>
@@ -9,9 +10,12 @@ function Header({isLoggedIn}){
                 Ciao sono un header
             </h1>
             <ul>
-                {listaMenu.map(function(elemento ,index){
-                    return <li> <a key={index} href="{elemento}"> {elemento} </a> </li>
-                })}
+            {listaMenu.map((lista)=>(
+                <Link key={lista} to ={'/lista/'+lista}>
+                {lista}
+                </Link>
+            ))}
+                
             </ul>
         </header>
     )

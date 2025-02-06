@@ -13,11 +13,11 @@ export const UserContext = createContext()
 function App() {
 
   const[username, setUsername] = useState('Marco')
-
+  const[isLoggedIn, setIsLoggedIn] = useState(true)
   return (
   <div className="App">
     <Header isLoggedIn={true}/>
-    <Header isLoggedIn={false}/> 
+    {/* <Header isLoggedIn={false}/>  */}
     <UserContext.Provider value =  { {username, setUsername} }>
       <ParentComponent/>
     </UserContext.Provider>

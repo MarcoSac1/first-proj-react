@@ -9,6 +9,9 @@ import About from './components/pages/About';
 import Error from './components/pages/Error';
 import Accounts from './components/pages/Accounts';
 import SingleAccounts from './components/pages/SingleAccount';
+import Header from './components/Header';
+import Consulenza from './components/pages/Consulenza';
+
 
 
 
@@ -16,7 +19,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const router = createBrowserRouter([
   {
-    path:'/',
+    path:'/Home',
     element: <App/>,
     errorElement:<Error/>
   },
@@ -31,7 +34,15 @@ const router = createBrowserRouter([
   {
     path:'/accounts/:name',//creo un router dinamico 
     element:<SingleAccounts/>
-  }
+  },
+  {
+    path:'/lista/:name',//creo un router dinamico 
+    element:<Header/>
+  },
+  {
+    path:'/lista/Consulenza',//creo un router dinamico 
+    element:<Consulenza/>
+  },
 ])
 
 root.render(
